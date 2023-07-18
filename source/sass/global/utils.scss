@@ -17,6 +17,11 @@
   }
 }
 
+.conic-gradient {
+  background: $dark-cerulean-to-venetian-red;
+}
+
+
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */
@@ -68,4 +73,8 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.is-hidden {
+  display: none;
 }

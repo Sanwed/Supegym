@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 103px;
+  background-color: $color-russian-black;
+
+  @include vp-1199 {
+    padding: 45px;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding: 50px 15px;
+  }
+}
