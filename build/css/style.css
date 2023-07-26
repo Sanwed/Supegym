@@ -4602,17 +4602,6 @@ img {
 .free__input {
   width: 190px;
 }
-@media (max-width: 1199px) {
-  .free__input {
-    width: 207px;
-  }
-}
-@media (max-width: 767px) {
-  .free__input {
-    width: 100%;
-  }
-}
-
 .free__input p {
   display: none;
   margin: 5px 0 0;
@@ -4658,12 +4647,18 @@ img {
   opacity: 0.3;
 }
 @media (max-width: 1199px) {
+  .free__input {
+    width: 207px;
+  }
   .free__input input {
     width: 207px;
     margin-right: 60px;
   }
 }
 @media (max-width: 767px) {
+  .free__input {
+    width: 100%;
+  }
   .free__input input {
     width: 100%;
     margin: 0 0 33px;

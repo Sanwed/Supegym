@@ -36,16 +36,6 @@
 .free__input {
   width: 190px;
 
-  @include vp-1199 {
-    width: 207px;
-  }
-
-  @include vp-767 {
-    width: 100%;
-  }
-}
-
-.free__input {
   p {
     display: none;
     margin: 5px 0 0;
@@ -86,6 +76,8 @@
   }
 
   @include vp-1199 {
+    width: 207px;
+
     input {
       width: 207px;
       margin-right: 60px;
@@ -93,6 +85,8 @@
   }
 
   @include vp-767 {
+    width: 100%;
+
     input {
       width: 100%;
       margin: 0 0 33px;
