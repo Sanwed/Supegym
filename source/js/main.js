@@ -6,7 +6,6 @@ import {initTabs} from './modules/tabs/init-tabs.js';
 import {initAccordions} from './modules/accordion/init-accordion.js';
 import {initTrainers} from './modules/trainers/trainers.js';
 import {initReviewSlider} from './modules/slider/slider.js';
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

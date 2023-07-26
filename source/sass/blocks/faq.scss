@@ -1,6 +1,6 @@
 .faq {
   padding: 140px 103px 120px;
-  background-color: #f8f9fc;
+  background-color: $color-ghost-white;
 
   h2 {
     font-family: $ff-secondary;
@@ -70,7 +70,7 @@
   cursor: pointer;
   text-align: center;
   background-color: transparent;
-  color: #102654;
+  color: $color-sapphire;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
@@ -84,7 +84,7 @@
   &:focus {
     color: $color-default-white;
     outline: none;
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: $torch-red-to-cobalt;
   }
 
   &:active {
@@ -103,7 +103,7 @@
   }
 
   &.is-active {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: $torch-red-to-cobalt;
     color: $color-default-white;
     pointer-events: none;
   }

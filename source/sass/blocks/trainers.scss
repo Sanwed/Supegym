@@ -73,11 +73,11 @@
   cursor: pointer;
 
   &:hover {
-    border: 1px solid #102654;
+    border: 1px solid $color-sapphire;
   }
 
   &:focus {
-    background-color: #102654;
+    background-color: $color-sapphire;
     outline: none;
   }
 
@@ -99,6 +99,4 @@
       height: 19px;
     }
   }
-
-
 }

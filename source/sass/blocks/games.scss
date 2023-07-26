@@ -91,7 +91,7 @@
   }
 
   hr {
-    background-color: #ffffff;
+    background-color: $color-default-white;
     border: none;
     height: 1px;
     margin: 0 0 5px;
@@ -140,7 +140,7 @@
   }
 
   hr {
-    background-color: #ffffff;
+    background-color: $color-default-white;
     border: none;
     height: 1px;
     margin: 0 0 5px;
@@ -166,19 +166,19 @@
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
-  border: 4px solid #ffffff;
+  border: 4px solid $color-default-white;
 
   @include vp-1199 {
     font-size: 10px;
     letter-spacing: 0.5px;
-    border: 2px solid #ffffff;
+    border: 2px solid $color-default-white;
     padding: 10px;
   }
 
   &:hover,
   &:focus {
     background-color: $color-default-white;
-    color: #103aae;
+    color: $color-egyptian-blue;
   }
 
   &:active {

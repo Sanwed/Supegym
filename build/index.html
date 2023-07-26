@@ -780,11 +780,17 @@
     <div class="two-columns">
       <section class="free">
         <h2>Бесплатное занятие</h2>
-        <div data-form-validate>
+        <div data-form-validate data-callback="base">
           <form class="free__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="free__input-wrapper">
-              <input type="text" name="name" placeholder="Имя" required data-validate-type="text">
-              <input type="tel" name="phone" placeholder="Телефон" required data-validate-type="phone" data-limitation="digit">
+              <div class="free__input" data-validate-type="text" data-required>
+                <input type="text" name="name" placeholder="Имя" required>
+                <p>Поле обязательно к заполнению</p>
+              </div>
+              <div class="free__input" data-validate-type="phone" data-required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <p>Поле обязательно к заполнению</p>
+              </div>
             </div>
             <button class="free__button" type="submit">Отправить</button>
           </form>

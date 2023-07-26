@@ -23,7 +23,7 @@
   &:focus {
     border: 7px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+    border-image-source: $torch-red-to-cobalt;
   }
 
   @include vp-1199 {
@@ -93,8 +93,8 @@
 .card__link {
   display: block;
   padding: 20px;
-  border: 2px solid #102654;
-  color: #102654;
+  border: 2px solid $color-sapphire;
+  color: $color-sapphire;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -104,7 +104,7 @@
 
   &:hover,
   &:focus {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: $torch-red-to-cobalt;
     color: $color-default-white;
     border: none;
   }

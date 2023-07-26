@@ -23,12 +23,12 @@
   background-color: $color-default-white;
 
   svg {
-    fill: #030a1a;
+    fill: $color-russian-black;
   }
 
   &:hover,
   &:focus {
-    background-color: #103aae;
+    background-color: $color-egyptian-blue;
 
     svg {
       fill: $color-default-white;
@@ -36,7 +36,7 @@
   }
 
   &:active {
-    background-color: #102654;
+    background-color: $color-sapphire;
   }
 
   &--disable {
