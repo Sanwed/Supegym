@@ -21,4 +21,26 @@
   width: 25px;
   height: 25px;
   background-color: $color-default-white;
+
+  svg {
+    fill: #030a1a;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #103aae;
+
+    svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:active {
+    background-color: #102654;
+  }
+
+  &--disable {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }

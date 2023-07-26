@@ -21,6 +21,13 @@
   background: $dark-cerulean-to-venetian-red;
 }
 
+.two-columns {
+  display: flex;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
 
 .rouble {
   font-family: $ff-rouble;

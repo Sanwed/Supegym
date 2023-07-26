@@ -1,0 +1,130 @@
+.trainer {
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 27px;
+    text-align: center;
+    color: $color-default-white;
+    margin: 0;
+    width: 260px;
+    left: calc(50% - 130px);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-1199 {
+    p {
+      width: 268px;
+    }
+  }
+
+  @include vp-767 {
+    p {
+      left: calc(50% - 113px);
+      width: 226px;
+    }
+  }
+}
+
+.trainer__image {
+  margin: 0 auto;
+  width: 260px;
+  height: 294px;
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.trainer__text-wrapper {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 130px);
+  width: 260px;
+  height: 294px;
+  text-align: center;
+  padding: 58px 45px 58px 55px;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: $color-default-white;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+
+  p {
+    position: static;
+    text-align: center;
+    color: $color-default-white;
+    margin: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  span {
+    display: block;
+    color: #b6bdcc;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 30px;
+  }
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+    left: calc(50% - 134px);
+  }
+
+  @include vp-767 {
+    padding: 48px 33px;
+    width: 226px;
+    left: calc(50% - 113px);
+    height: 274px;
+  }
+}
+
+.trainer:hover .trainer__text-wrapper,
+.trainer:focus .trainer__text-wrapper, {
+  @media (min-width: 1200px) {
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.trainer:focus > p,
+.trainer:hover > p {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.trainer.is-active .trainer__text-wrapper {
+  opacity: 1;
+}
+
+.trainer.is-active > p {
+  display: none;
+}
+
+.trainer__list {
+  margin: 0;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.trainer__item {
+  margin-bottom: 14px;
+}

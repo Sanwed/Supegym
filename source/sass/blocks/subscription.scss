@@ -1,0 +1,159 @@
+.subscription {
+  position: relative;
+  background-color: #f8f9fc;
+  padding: 140px 103px 120px;
+
+  h2 {
+    font-family: $ff-secondary;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.62px;
+    text-align: center;
+    margin: 0 0 15px;
+  }
+
+  @include vp-1199 {
+    padding: 112px 163px;
+
+    h2 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 73px 15px 70px;
+
+    h2  {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.subscription__image {
+  position: absolute;
+  width: 321px;
+  height: 384px;
+  right: -17px;
+  bottom: -90px;
+  transform: scale(1.3);
+
+  @include vp-1199 {
+    width: 289px;
+    height: 345px;
+    right: 28px;
+    bottom: -60px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.subscription__tabs {
+  max-width: 100%;
+}
+
+.subscription__tabs-controls {
+  position: relative;
+  display: flex;
+  width: max-content;
+  margin: 0 auto 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.subscription__tabs-control {
+  border: none;
+  padding: 20px 0 14px;
+  cursor: pointer;
+  min-width: auto;
+  justify-content: center;
+  background-color: transparent;
+  color: rgba(16, 38, 84, 0.5);
+  border-bottom: 2px solid transparent;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-right: 48px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+    outline: none;
+    border-bottom: 2px solid #d10a42;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  @include vp-767 {
+    padding: 12px 0;
+    margin-right: 0;
+    font-size: 16px;
+    width: 33%;
+    text-align: center;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &.is-active {
+    color: $color-sapphire;
+    pointer-events: none;
+    border-bottom: 2px solid #d10a42;
+  }
+}
+
+.subscription__tabs-content {
+  transition: height 0.3s;
+}
+
+.subscription__tabs-element {
+  width: 100%;
+}
+
+.subscription__tabs--unset .subscription__tabs-content {
+  height: 100px;
+}
+
+.subscription__tabs--unset .subscription__tabs-element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -2,8 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -13,6 +12,8 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
+@import "global/data-tabs";
+@import "global/data-accordion";
 @import "global/container";
 @import "global/global";
 
@@ -30,6 +31,21 @@
 @import "blocks/social";
 @import "blocks/hero";
 @import "blocks/about";
+@import "blocks/subscription";
+@import "blocks/cards";
+@import "blocks/card";
+@import "blocks/games";
+@import "blocks/trainers";
+@import "blocks/trainer";
+@import "blocks/advantages";
+@import "blocks/advantage";
+@import "blocks/promotions";
+@import "blocks/promotion";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/contacts";
+@import "blocks/free";
 
 // ---------------------------------
 

@@ -1,0 +1,55 @@
+.review {
+  padding: 62px;
+  background-color: #1c3374;
+  color: $color-default-white;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 15px 28px;
+  filter: drop-shadow(0 0 40px rgba(28, 51, 116, 0.2));
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  @include vp-1199 {
+    padding: 60px 65px 58px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 68px 1fr;
+    padding: 40px 25px;
+    gap: 15px;
+
+    h3 {
+      line-height: 30px;
+    }
+
+    p {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  }
+}
+
+.review__image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 28px;
+  grid-row: 1 / 3;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+    grid-row: 1 / 2;
+    margin-right: 0;
+  }
+}

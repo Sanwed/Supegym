@@ -1,0 +1,121 @@
+.free {
+  padding: 56px 170px 70px 103px;
+  background-color: #102654;
+  color: $color-default-white;
+  flex-basis: 50%;
+
+  h2 {
+    font-family: $ff-secondary;
+    font-size: 54px;
+    line-height: 84px;
+    letter-spacing: 1.62px;
+    margin: 0 0 17px;
+  }
+
+  @include vp-1199 {
+    padding: 42px 160px 70px 132px;
+
+    h2 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 67px 15px 70px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin: 0 0 38px;
+    }
+  }
+}
+
+.free__input-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+
+  input {
+    width: 190px;
+    color: $color-default-white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    margin-right: 30px;
+    font-size: 14px;
+    padding: 5px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:focus {
+      padding: 5px;
+      outline: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+
+  @include vp-1199 {
+    input {
+      width: 207px;
+      margin-right: 60px;
+    }
+  }
+
+  @include vp-767 {
+    display: block;
+    margin-bottom: 40px;
+
+    input {
+      width: 100%;
+      margin: 0 0 33px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.free__button {
+  background-color: transparent;
+  border: 3px solid $color-default-white;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 15px;
+  color: $color-default-white;
+  max-width: 500px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: #103aae;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
