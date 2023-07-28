@@ -1,6 +1,6 @@
 .contacts {
   border-top: 1px solid #74819c;
-  padding: 78px 160px 70px 120px;
+  padding: 78px 160px 64px 120px;
   flex-basis: 50%;
 
   h2 {
@@ -40,11 +40,11 @@
 }
 
 .contacts__column {
-  padding: 0 60px 0 0;
+  padding: 0 65px 0 0;
   border-right: 1px solid #74819c;
 
   &:last-child {
-    padding: 0 0 0 60px;
+    padding: 0 0 0 58px;
     margin-right: 0;
     border: none;
   }
@@ -53,7 +53,7 @@
     padding: 0 50px 0 0;
 
     &:last-child {
-      padding: 0 0 0 50px;
+      padding: 0 0 0 46px;
     }
   }
 
@@ -69,7 +69,7 @@
 }
 
 .contacts__contact {
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -78,13 +78,34 @@
   h3 {
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
+    margin: 0 0 5px;
   }
 
   p {
     font-size: 14px;
     line-height: 21px;
     margin: 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-sapphire;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
   }
 
   @include vp-1199 {

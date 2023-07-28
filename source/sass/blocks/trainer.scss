@@ -95,14 +95,14 @@
 }
 
 .trainer:hover .trainer__text-wrapper,
-.trainer:focus .trainer__text-wrapper, {
+.trainer:focus-visible .trainer__text-wrapper, {
   @media (min-width: 1200px) {
     outline: none;
     opacity: 1;
   }
 }
 
-.trainer:focus > p,
+.trainer:focus-visible > p,
 .trainer:hover > p {
   @media (min-width: 1200px) {
     display: none;

@@ -18,7 +18,11 @@
 }
 
 .conic-gradient {
-  background: $dark-cerulean-to-venetian-red;
+  background: $conic-gradient;
+
+  @include vp-767 {
+    background: conic-gradient(from 167deg at 35% 34%, #003d85 32deg, #b80027 313deg, #003d85 360deg);
+  }
 }
 
 .two-columns {

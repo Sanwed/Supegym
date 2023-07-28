@@ -2,39 +2,37 @@
   display: flex;
   color: $color-default-white;
   padding: 0 122px 7px;
-  align-items: center;
+  align-items: flex-end;
 
   @include vp-1199 {
     padding: 0 45px 82px;
-    align-items: flex-end;
-    justify-content: center;
   }
 
   @include vp-767 {
-    padding: 60px 15px 75px;
+    padding: 60px 15px 78px;
   }
 }
 
 .hero__text-wrapper {
   text-align: right;
-  margin: 0 67px 0 5px;
+  margin: 0 61px 88px 0;
 
   p {
     font-family: $ff-secondary;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 600;
     letter-spacing: 1.44px;
     padding: 0;
-    margin: 0 36px 25px 0;
+    margin: 0 55px 30px 0;
   }
 
   @include vp-1199 {
-    margin: 0 38px 18px 0;
+    margin: 0 30px 22px 0;
 
     p {
-      font-size: 34px;
+      font-size: 30px;
       letter-spacing: 1.02px;
-      margin: 0 0 14px;
+      margin: 0 5px 14px 0;
     }
   }
 
@@ -43,8 +41,9 @@
     width: 100%;
 
     p {
-      font-size: 28px;
+      font-size: 24px;
       letter-spacing: 0.84px;
+      margin: 0 5px 18px 0;
     }
   }
 }
@@ -65,7 +64,7 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 
     p {
       font-size: 72px;
@@ -87,12 +86,12 @@
   font-family: $ff-primary;
   list-style: none;
   padding: 0;
-  margin: 0 10px 40px 0;
+  margin: 0 20px 40px 0;
   font-size: 14px;
   line-height: 21px;
 
   @include vp-1199 {
-    margin: 0 10px 20px 0;
+    margin: 0 20px 20px 0;
   }
 
   @include vp-767 {
@@ -130,9 +129,10 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: $color-default-white;
+  user-select: none;
 
   @include vp-1199 {
-    padding: 24px 33px;
+    padding: 20px 31px;
   }
 
   @include vp-767 {
@@ -140,9 +140,10 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
+    outline: none;
   }
 
   &:active {

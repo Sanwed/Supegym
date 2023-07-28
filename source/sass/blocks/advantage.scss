@@ -5,7 +5,7 @@
     display: block;
     text-align: center;
     margin-bottom: 40px;
-    padding: 0 45px;
+    padding: 0 46px;
 
     &:last-child {
       margin-bottom: 0;
@@ -46,7 +46,11 @@
     @include vp-1199 {
       width: 442px;
       margin: 0 auto;
-      padding: 35px 135px;
+      padding: 35px 135px 40px;
+
+      b {
+        margin-bottom: 3px;
+      }
 
       span {
         font-size: 22px;
@@ -112,8 +116,8 @@
 .advantage__text-wrapper {
   h3 {
     font-size: 22px;
-    line-height: 33px;
-    margin: 0;
+    line-height: 22px;
+    margin: 0 0 10px;
   }
 
   p {
@@ -126,7 +130,8 @@
   @include vp-1199 {
     h3 {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 29px;
+      margin: 0;
     }
   }
 

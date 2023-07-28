@@ -27,7 +27,8 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
+    outline: none;
     background-color: $color-egyptian-blue;
 
     svg {

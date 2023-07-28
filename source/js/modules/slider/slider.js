@@ -3,6 +3,7 @@ import Swiper from '../../vendor/swiper.js';
 const initTrainerSlider = () => {
   const slider = new Swiper('.trainers__slider', {
     loop: true,
+    lazy: true,
     navigation: {
       nextEl: '.trainers__button--next',
       prevEl: '.trainers__button--prev',
@@ -28,6 +29,7 @@ const initTrainerSlider = () => {
 
 const initReviewSlider = () => {
   const slider = new Swiper('.reviews__slider', {
+    lazy: true,
     navigation: {
       nextEl: '.reviews__button--next',
       prevEl: '.reviews__button--prev',

@@ -22,12 +22,12 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px 60px;
+    padding: 78px 15px 74px;
 
     h2 {
       font-size: 32px;
       letter-spacing: 0.96px;
-      margin: 0 0 43px;
+      margin: 0 0 36px;
     }
   }
 }
@@ -74,14 +74,15 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
+  user-select: none;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $color-default-white;
     outline: none;
     background: $torch-red-to-cobalt;
@@ -121,18 +122,8 @@
   }
 }
 
-.faq__tabs--unset .faq__tabs-content {
-  height: 100px;
-}
-
-.faq__tabs--unset .faq__tabs-element {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 .faq__accordion-element {
-  padding: 26px 0;
+  padding: 25px 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
   &:first-child {
@@ -164,8 +155,6 @@
   }
 
   @include vp-767 {
-    margin: 0 0 7px;
-
     h3 {
       font-size: 18px;
       line-height: 21px;
@@ -198,8 +187,9 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: #1c3374;
+    outline: none;
 
     &::before,
     &::after {
@@ -232,6 +222,14 @@
 
   &::after {
     display: none;
+  }
+}
+
+.faq__accordion-element.is-active .faq__accordion-header {
+  margin-bottom: 7px;
+
+  @include vp-767 {
+    margin-bottom: 15px;
   }
 }
 
