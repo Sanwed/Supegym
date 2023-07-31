@@ -1,6 +1,6 @@
 .contacts {
   border-top: 1px solid #74819c;
-  padding: 78px 160px 64px 120px;
+  padding: 78px 0 64px;
   flex-basis: 50%;
 
   h2 {
@@ -12,7 +12,7 @@
   }
 
   @include vp-1199 {
-    padding: 75px 160px 68px 132px;
+    padding: 75px 160px 65px 132px;
 
     h2 {
       font-size: 42px;
@@ -32,6 +32,15 @@
 }
 
 .contacts__wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    max-width: 476px;
+  }
+}
+
+.contacts__inner-wrapper {
   display: flex;
 
   @include vp-767 {
@@ -114,7 +123,7 @@
     h3 {
       font-size: 20px;
       line-height: 10px;
-      margin: 0 0 18px;
+      margin: 0 0 20px;
     }
 
     p {
@@ -124,5 +133,9 @@
 
   @include vp-767 {
     margin-bottom: 35px;
+
+    h3 {
+      margin: 0 0 18px;
+    }
   }
 }

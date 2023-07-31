@@ -3,12 +3,12 @@
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 
   @include vp-1199 {
     gap: 41px;
+    flex-wrap: wrap;
   }
 
   @include vp-767 {

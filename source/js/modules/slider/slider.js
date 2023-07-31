@@ -17,9 +17,6 @@ const initTrainerSlider = () => {
         spaceBetween: 30,
       },
       1200: {
-        slidesPerView: '3',
-      },
-      1366: {
         slidesPerView: '4',
         spaceBetween: 40,
       },

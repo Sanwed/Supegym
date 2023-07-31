@@ -1,5 +1,5 @@
 .reviews {
-  padding: 140px 403px 116px;
+  padding: 140px 103px 116px;
 
   h2 {
     font-family: $ff-secondary;
@@ -34,6 +34,8 @@
   position: relative;
   max-width: 560px;
   margin: 0 auto;
+
+  @include vp-1199 {}
 
   @include vp-767 {
     max-width: 226px;
