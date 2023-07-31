@@ -76,6 +76,7 @@
   line-height: 18px;
   margin: 0 0 8px;
   user-select: none;
+  min-height: 44px;
 
   &:last-child {
     margin-bottom: 0;
@@ -83,13 +84,19 @@
 
   &:hover,
   &:focus-visible {
-    color: $color-default-white;
     outline: none;
-    background: $torch-red-to-cobalt;
+    border: 1px solid #102654;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.6);
+    background: $torch-red-to-cobalt;
+    color: $color-default-white;
+    border: none;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(16, 38, 84, 0.20);
+    color: #c8c9cc;
   }
 
   @include vp-1199 {
@@ -107,6 +114,7 @@
     background: $torch-red-to-cobalt;
     color: $color-default-white;
     pointer-events: none;
+    border: none;
   }
 }
 

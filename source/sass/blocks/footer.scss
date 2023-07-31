@@ -1,11 +1,11 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 103px 40px 85px;
+  padding: 40px 103px;
   background-color: $color-russian-black;
 
   @include vp-1199 {
-    padding: 45px 45px 45px 30px;
+    padding: 45px 45px 45px 40px;
   }
 
   @include vp-767 {
@@ -17,5 +17,19 @@
 .footer__nav {
   @include vp-767 {
     margin-bottom: 45px;
+  }
+}
+
+.footer__social {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 26px;
+
+  @include vp-1199 {
+    margin: 0 0 0 10px;
+  }
+
+  @include vp-767 {
+    margin: 0;
   }
 }

@@ -109,7 +109,7 @@
   &:focus-visible {
     color: $color-sapphire;
     outline: none;
-    border-bottom: 2px solid #d10a42;
+    border-bottom: 2px solid $color-torch-red;
   }
 
   &:disabled {
@@ -140,7 +140,7 @@
   &.is-active {
     color: $color-sapphire;
     pointer-events: none;
-    border-bottom: 2px solid #d10a42;
+    border-bottom: 2px solid $color-torch-red;
   }
 }
 

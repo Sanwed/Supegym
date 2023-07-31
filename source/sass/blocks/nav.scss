@@ -8,6 +8,11 @@
   margin: 0;
   display: flex;
   justify-content: center;
+  gap: 30px;
+
+  @include vp-1199 {
+    gap: 20px;
+  }
 
   @include vp-767 {
     display: grid;
@@ -63,8 +68,8 @@
 
 .nav__link {
   color: $color-default-white;
-  padding: 20px;
   font-size: 14px;
+  padding: 5px;
 
   svg {
     width: 82px;
@@ -83,13 +88,14 @@
     border: none;
   }
 
-  @include vp-1199 {
-    padding: 15px;
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
   }
 
   @include vp-767 {
-    padding: 0;
     font-size: 16px;
+    padding: 0;
 
     svg {
       width: 68px;
