@@ -59,6 +59,13 @@
   color: $color-default-white;
   opacity: 0;
   transition: opacity 0.1s linear;
+  scrollbar-width: none;
+  overflow: scroll;
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   p {
     position: static;

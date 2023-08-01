@@ -2,8 +2,14 @@
   padding: 60px 0;
   background-color: $color-default-white;
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   border: 7px solid transparent;
+
+  &:hover {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: $torch-red-to-cobalt;
+  }
 
   h3 {
     font-size: 26px;
@@ -20,13 +26,14 @@
   }
 
   @include vp-1199 {
-    width: 440px;
+    max-width: 440px;
     min-height: 447px;
     padding: 60px 110px;
   }
 
   @include vp-767 {
     width: 100%;
+    max-width: 100%;
     min-height: 384px;
     padding: 47px 34px;
 
@@ -86,7 +93,14 @@
   }
 }
 
-.card__link {
+.card:hover .card__link {
+  background: $torch-red-to-cobalt;
+  color: $color-default-white;
+  border: none;
+  outline: none;
+}
+
+.card .card__link {
   display: block;
   padding: 20px;
   border: 2px solid $color-sapphire;

@@ -13,14 +13,30 @@
   }
 
   &--main {
+    position: relative;
     display: block;
     background-color: #1c3374;
     padding: 58px 34px;
-    max-height: 305px;
-    overflow: scroll;
     text-align: center;
     color: $color-default-white;
-    scrollbar-width: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 340px;
+      background-color: rgba(209, 10, 66, 0.2);
+      height: 2px;
+      top: calc(50% - 1px);
+    }
+
+    &::before {
+      left: -400px;
+    }
+
+    &::after {
+      right: -400px;
+    }
 
     b {
       display: block;
@@ -70,10 +86,6 @@
   }
 }
 
-.advantage--main::-webkit-scrollbar {
-  display: none;
-}
-
 .advantage:nth-child(3n + 1) .advantage__count-wrapper {
   margin-left: 20px;
 
@@ -114,6 +126,14 @@
 }
 
 .advantage__text-wrapper {
+  max-height: 150px;
+  overflow: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   h3 {
     font-size: 22px;
     line-height: 22px;

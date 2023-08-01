@@ -4,6 +4,7 @@
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(#d10a42, #00359f);
+  min-height: 211px;
 
   h3 {
     color: #1c3374;
@@ -69,7 +70,7 @@
 
 .promotion--main .promotion__text {
   flex-basis: 50%;
-  padding: 45px;
+  padding: 45px 45px 65px;
 
   @include vp-1199 {
     flex-basis: 279px;
@@ -143,7 +144,7 @@
 
 .promotion__image {
   width: 280px;
-  height: 462px;
+  height: auto;
 
   img {
     object-fit: cover;

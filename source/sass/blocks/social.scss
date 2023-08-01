@@ -1,13 +1,7 @@
 .social {
   display: flex;
-}
-
-.social__item {
-  margin-left: 11px;
-
-  &:first-child {
-    margin-left: 0;
-  }
+  flex-wrap: wrap;
+  gap: 11px;
 }
 
 .social__link {
