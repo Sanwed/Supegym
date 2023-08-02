@@ -34,10 +34,6 @@
   position: relative;
   max-width: 560px;
   margin: 0 auto;
-
-  @include vp-767 {
-    max-width: 226px;
-  }
 }
 
 .reviews__buttons {

@@ -131,14 +131,6 @@
 }
 
 .advantage__text-wrapper {
-  max-height: 150px;
-  overflow: scroll;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
   h3 {
     font-size: 22px;
     line-height: 22px;
