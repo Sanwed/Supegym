@@ -46,11 +46,6 @@
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
     gap: 45px 35px;
-
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 
   @include vp-767 {
