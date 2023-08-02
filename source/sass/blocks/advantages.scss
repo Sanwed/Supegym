@@ -37,8 +37,8 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 340px 240px 340px;
-  gap: 158px 60px;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 78px 60px;
   margin: 0 auto;
   width: max-content;
   max-width: 100%;
